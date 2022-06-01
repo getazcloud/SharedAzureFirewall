@@ -19,7 +19,7 @@ env:
 
   location: 'westeurope'
 
-  hubSub: 'de1b9349-a302-4b0f-98fb-2e6adc5b2d68'
+  hubSub: '6873d782-8d1b-4a17-ac89-64e695122af1'
   hubNetworkResourceGroupName: 'hub-network'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
