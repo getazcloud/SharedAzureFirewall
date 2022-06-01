@@ -46,5 +46,6 @@ jobs:
         uses: azure/powershell@v1
         with:
           inlineScript: |
-            .\BicepDevSecOps\hub\scripts\deploy.ps1 -subscriptionId "${{env.hubSub}}" -resourceGroupName "${{env.hubNetworkResourceGroupName}}" -location "${{env.location}}" -deployment "hub" -templateFile './platform/hub.bicep' -templateParameterFile './platform/hub-parameters.json'
-          azPSVersion: "latest"
+          pwd
+ #           .\BicepDevSecOps\hub\scripts\deploy.ps1 -subscriptionId "${{env.hubSub}}" -resourceGroupName "${{env.hubNetworkResourceGroupName}}" -location "${{env.location}}" -deployment "hub" -templateFile './platform/hub.bicep' -templateParameterFile './platform/hub-parameters.json'
+ #         azPSVersion: "latest"
