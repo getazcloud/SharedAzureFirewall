@@ -45,7 +45,8 @@ jobs:
       - name: Deploy Hub
         uses: azure/powershell@v1
         with:
+          azPSVersion: "latest"
           inlineScript: |
             pwd
 #           .\BicepDevSecOps\hub\scripts\deploy.ps1 -subscriptionId "${{env.hubSub}}" -resourceGroupName "${{env.hubNetworkResourceGroupName}}" -location "${{env.location}}" -deployment "hub" -templateFile './platform/hub.bicep' -templateParameterFile './platform/hub-parameters.json'
-#           azPSVersion: "latest"
+            
