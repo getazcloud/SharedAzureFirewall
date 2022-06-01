@@ -48,5 +48,5 @@ jobs:
           azPSVersion: "latest"
           inlineScript: |
             pwd
-#           .\BicepDevSecOps\hub\scripts\deploy.ps1 -subscriptionId "${{env.hubSub}}" -resourceGroupName "${{env.hubNetworkResourceGroupName}}" -location "${{env.location}}" -deployment "hub" -templateFile './platform/hub.bicep' -templateParameterFile './platform/hub-parameters.json'
+            .\BicepDevSecOps\hub\scripts\deploy.ps1 -subscriptionId "${{env.hubSub}}" -resourceGroupName "${{env.hubNetworkResourceGroupName}}" -location "${{env.location}}" -deployment "hub" -templateFile './BicepDevSecOps/hub/platform/hub.bicep' -templateParameterFile './BicepDevSecOps/hub/platform/hub-parameters.json'
             
